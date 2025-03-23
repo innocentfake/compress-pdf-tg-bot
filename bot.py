@@ -1,10 +1,7 @@
 import os
 from pyrogram import Client
 
-
-if bool(os.environ.get("ENV", False)):
-    from config.py import LOGGER
-
+from .config import *
 
 class Bot(Client):
     def __init__(self):
