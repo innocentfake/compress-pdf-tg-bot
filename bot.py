@@ -3,10 +3,6 @@ from pyrogram import Client
 
 
 if bool(os.environ.get("ENV", False)):
-    from config.py import Config.py
-    from config.py import LOGGER
-else:
-    from config.py import Config.py
     from config.py import LOGGER
 
 
