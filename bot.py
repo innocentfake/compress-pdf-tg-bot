@@ -3,20 +3,20 @@ from pyrogram import Client
 
 
 if bool(os.environ.get("ENV", False)):
-    from sample_config import Config
-    from sample_config import LOGGER
+    from config.py import Config.py
+    from config.py import LOGGER
 else:
-    from config import Config
-    from config import LOGGER
+    from config.py import Config.py
+    from config.py import LOGGER
 
 
 class Bot(Client):
     def __init__(self):
         super().__init__(
             "compress-pdf-tg-bot",
-            bot_token=Config.TG_BOT_TOKEN,
-            api_id=Config.APP_ID,
-            api_hash=Config.API_HASH,
+            bot_token=Config.pyTG_BOT_TOKEN,
+            api_id=Config.pyAPP_ID,
+            api_hash=Config.pyAPI_HASH,
             plugins={
                 "root": "plugins"
             },
