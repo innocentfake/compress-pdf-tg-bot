@@ -1,5 +1,5 @@
 from pyrogram import Client
-from .config import *
+from config import *
 from pyrogram.enums import ParseMode
 
 class Bot(Client):
