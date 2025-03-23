@@ -16,7 +16,6 @@ class Bot(Client):
             plugins={
                 "root": "plugins"
             },
-        )
         self.LOGGER = LOGGER
 
     async def start(self):
