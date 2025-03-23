@@ -15,7 +15,7 @@ class Bot(Client):
             api_hash=Config.py API_HASH,)
             plugins={
                 "root": "plugins"
-            },
+            }
         self.LOGGER = LOGGER
 
     async def start(self):
