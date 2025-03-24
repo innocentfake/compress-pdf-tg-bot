@@ -1,6 +1,6 @@
 from pyrogram import Client
 from config import *
-from pyrogram.types import ParseMode 
+from pyrogram.types import ParseMode
 
 class Bot(Client):
     def __init__(self):
@@ -16,7 +16,8 @@ class Bot(Client):
     async def start(self):
         await super().start()
         me = await self.get_me()
-        self.set_parse_mode(ParseMode.HTML)
+        self.set_parse_mode("html")
+
         self.LOGGER.info(f"@{me.username} started!")
 
     async def stop(self, *args):
