@@ -1,6 +1,6 @@
 from pyrogram import Client
 from config import *
-from pyrogram.enums import ParseMode
+from pyrogram.types import ParseMode 
 
 class Bot(Client):
     def __init__(self):
