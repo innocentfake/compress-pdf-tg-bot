@@ -1,5 +1,7 @@
 from pyrogram import Client
 from config import *
+import time
+time.sleep(5)  # Wait 5 seconds before starting Pyrogram to allow time sync
 
 class Bot(Client):
     def __init__(self):
